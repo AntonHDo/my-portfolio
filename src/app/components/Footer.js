@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex relative flex-col items-center mt-24 w-full max-md:mt-10 max-md:max-w-full">
       <div className="shrink-0 max-w-full h-1.5 bg-stone-50 bg-opacity-70 w-[996px]" />
-      <h2 className="mt-24 text-4xl text-center text-white border border-solid border-white border-opacity-50 tracking-[2px] max-md:mt-10 max-md:max-w-full">
+      <h2 className="mt-24 text-4xl text-center text-white border-white border-opacity-50 tracking-[2px] max-md:mt-10 max-md:max-w-full">
         Stay Connected With Me!
       </h2>
       <div className="flex gap-5 justify-center items-start pt-20">
