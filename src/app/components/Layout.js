@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div className="flex relative flex-col min-h-[4535px]">
+    <div className="flex relative flex-col ">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/e745ad32264ba7e793e2aa122c4eefe8c1c56603a2e5471a7162aa7ee1ade37e?apiKey=04b03a6f932f43d5ac0f299cdc8c8e61&&apiKey=04b03a6f932f43d5ac0f299cdc8c8e61"
