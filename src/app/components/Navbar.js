@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import MenuIcon from '@mui/icons-material/Menu'; // Importing the Menu icon
+import CloseIcon from '@mui/icons-material/Close'; // Importing the Close icon
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,28 +11,44 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  // Close menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (event.target.closest('.menu-container') === null) {
+        closeMenu();
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    } else {
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   return (
-    <header className="flex relative justify-between px-8 py-1.5 text-stone-50 max-md:flex-wrap max-md:px-5 max-md:py-5">
+    <header className="flex relative justify-between items-center px-8 py-1.5 text-stone-50 max-md:px-5 max-md:py-4">
       <h1 className="my-auto text-5xl font-medium border-stone-50 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
         Anton Do
       </h1>
 
       {/* Hamburger menu for mobile (only visible on small screens) */}
-      <div className=" flex items-center md:hidden">
+      <div className="flex items-center md:hidden z-20 ">
         <div onClick={toggleMenu} className="cursor-pointer">
-          <div className="w-8 h-1 bg-stone-50 mb-1"></div>
-          <div className="w-8 h-1 bg-stone-50 mb-1"></div>
-          <div className="w-8 h-1 bg-stone-50"></div>
+          {isMenuOpen ? (
+            <CloseIcon style={{ fontSize: 48 }} /> // Displaying Close icon
+          ) : (
+            <MenuIcon style={{ fontSize: 48 }} /> // Displaying Menu icon
+          )}
         </div>
-
-        {/* Dropdown menu (shown when hamburger is clicked) */}
-        {isMenuOpen && (
-          <nav className="absolute top-12 right-0 bg-stone-800 p-5 rounded-lg shadow-lg w-full md:hidden z-10">
-            <a href="#about" className="block py-2">About</a>
-            <a href="#projects" className="block py-2">Projects</a>
-            <a href="#contact" className="block py-2">Contact</a>
-          </nav>
-        )}
       </div>
 
       {/* Standard navigation links (hidden on mobile) */}
@@ -39,6 +57,15 @@ const Navbar = () => {
         <a href="#projects">Projects</a>
         <a href="#contact" className="self-start">Contact</a>
       </nav>
+
+      {/* Dropdown menu (shown when hamburger is clicked) */}
+      {isMenuOpen && (
+        <nav className="absolute top-20 right-0 bg-stone-800 bg-opacity-85 p-5 rounded-lg shadow-lg w-full md:hidden z-10 menu-container">
+          <a href="#about" className="block py-2">About</a>
+          <a href="#projects" className="block py-2">Projects</a>
+          <a href="#contact" className="block py-2">Contact</a>
+        </nav>
+      )}
     </header>
   );
 };
