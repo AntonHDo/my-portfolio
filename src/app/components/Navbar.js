@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex relative justify-between px-8 py-1.5 text-stone-50 max-md:flex-wrap max-md:px-5">
+    <header className="flex relative justify-between px-8 py-1.5 text-stone-50 max-md:flex-wrap max-md:px-5 max-md:py-5">
       <h1 className="my-auto text-5xl font-medium border-stone-50 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
         Anton Do
       </h1>
 
       {/* Hamburger menu for mobile (only visible on small screens) */}
-      <div className=" block md:hidden ali ">
+      <div className=" flex items-center md:hidden">
         <div onClick={toggleMenu} className="cursor-pointer">
           <div className="w-8 h-1 bg-stone-50 mb-1"></div>
           <div className="w-8 h-1 bg-stone-50 mb-1"></div>
