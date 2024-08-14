@@ -11,7 +11,7 @@ const App = () => {
         </Head>
       </div>
       <div>
-        <Layout />;
+        <Layout />
       </div>
     </div>
   );
