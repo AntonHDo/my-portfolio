@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <div>
         <Head>
-          <link rel="shortcut icon" href="src\app\page.js" />
+          <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
       </div>
       <div>
