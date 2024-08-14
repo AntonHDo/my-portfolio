@@ -7,8 +7,8 @@ const Footer = () => {
       component="footer"
       className="relative flex flex-col items-center px-16 w-full max-md:px-5 max-md:max-w-full"
     >
-      <Box className="shrink-0 max-w-full h-1.5 bg-stone-50 bg-opacity-70 w-[996px]" />
-      <h2 className="mt-24 text-4xl text-center text-white  border-white border-opacity-50 tracking-[2px] max-md:mt-24 max-md:max-w-full">
+      <Box className="shrink-0 max-w-full h-1.5 bg-slate-200 bg-opacity-70 w-[996px]" />
+      <h2 className="mt-24 text-4xl text-center text-slate-200  border-slate-200 border-opacity-50 tracking-[2px] max-md:mt-24 max-md:max-w-full">
         Stay Connected With Me!
       </h2>
       <Box className="flex gap-5 justify-center items-start py-20">
@@ -25,12 +25,12 @@ const Footer = () => {
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b41bea0c94d04b20871630ef5737036afe847c18e8eaa3672e861ebb7146b0f?apiKey=04b03a6f932f43d5ac0f299cdc8c8e61&&apiKey=04b03a6f932f43d5ac0f299cdc8c8e61"
             alt="GitHub"
-            className="shrink-0 aspect-[1.03] w-[70px]"
+            className="shrink-0 aspect-[1.03] w-[70px] border-slate-200 text-slate-200"
           />
         </a>
       </Box>
       <Box
-        className="absolute bottom-0 right-0"
+        className="absolute bottom-0 right-0 "
         sx={{
           textAlign: "right",
           color: "white",

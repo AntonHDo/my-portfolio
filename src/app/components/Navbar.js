@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import MenuIcon from '@mui/icons-material/Menu'; // Importing the Menu icon
-import CloseIcon from '@mui/icons-material/Close'; // Importing the Close icon
+import React, { useState, useEffect } from "react";
+import MenuIcon from "@mui/icons-material/Menu"; // Importing the Menu icon
+import CloseIcon from "@mui/icons-material/Close"; // Importing the Close icon
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,25 +18,25 @@ const Navbar = () => {
   // Close menu when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (event.target.closest('.menu-container') === null) {
+      if (event.target.closest(".menu-container") === null) {
         closeMenu();
       }
     };
 
     if (isMenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+      document.addEventListener("click", handleClickOutside);
     } else {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [isMenuOpen]);
 
   return (
-    <header className="flex relative justify-between items-center px-8 py-1.5 text-stone-50 max-md:px-5 max-md:py-4">
-      <h1 className="my-auto text-5xl font-medium border-stone-50 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
+    <header className="flex relative justify-between items-center px-8 py-1.5 text-slate-200 max-md:px-5 max-md:py-4">
+      <h1 className="my-auto text-5xl font-medium border-slate-200 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
         Anton Do
       </h1>
 
@@ -52,18 +52,26 @@ const Navbar = () => {
       </div>
 
       {/* Standard navigation links (hidden on mobile) */}
-      <nav className="hidden md:flex gap-5 py-8 text-2xl whitespace-nowrap">
+      <nav className="hidden md:flex gap-8 py-8 text-2xl whitespace-nowrap">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#contact" className="self-start">Contact</a>
+        <a href="#contact" className="self-start">
+          Contact
+        </a>
       </nav>
 
       {/* Dropdown menu (shown when hamburger is clicked) */}
       {isMenuOpen && (
         <nav className="absolute top-20 right-0 bg-stone-800 bg-opacity-85 p-5 rounded-lg shadow-lg w-full md:hidden z-10 menu-container">
-          <a href="#about" className="block py-2">About</a>
-          <a href="#projects" className="block py-2">Projects</a>
-          <a href="#contact" className="block py-2">Contact</a>
+          <a href="#about" className="block py-2">
+            About
+          </a>
+          <a href="#projects" className="block py-2">
+            Projects
+          </a>
+          <a href="#contact" className="block py-2">
+            Contact
+          </a>
         </nav>
       )}
     </header>
