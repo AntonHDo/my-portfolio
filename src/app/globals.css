@@ -27,7 +27,7 @@ body {
 }
 
 li {
-  margin-top: 2rem  
+  margin-bottom: 2rem  
 }
 
 @layer utilities {
