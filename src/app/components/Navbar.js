@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu"; // Importing the Menu icon
 import CloseIcon from "@mui/icons-material/Close"; // Importing the Close icon
@@ -36,9 +36,11 @@ const Navbar = () => {
 
   return (
     <header className="flex relative justify-between items-center px-8 py-1.5 text-slate-200 max-md:px-5 max-md:py-4">
-      <h1 className="my-auto text-5xl font-medium border-slate-200 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
-        Anton Do
-      </h1>
+      <Link href="/">
+        <h1 className="my-auto text-5xl font-medium border-slate-200 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
+          Anton Do
+        </h1>
+      </Link>
 
       {/* Hamburger menu for mobile (only visible on small screens) */}
       <div className="flex items-center md:hidden z-20 ">

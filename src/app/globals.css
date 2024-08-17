@@ -27,11 +27,17 @@ body {
 }
 
 li {
-  margin-bottom: 2rem  
+  margin-top: 2rem  
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.custom-underline {
+  border-bottom: 8px solid ; /* Adjust color and thickness */
+  padding-bottom: 8px; /* Increase to push the underline lower */
 }

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import SectionTitle from "./Section Title";
 import ProjectItem from "./ProjectItem";
 
@@ -11,12 +12,13 @@ const Projects = () => {
       id: 1,
       title: "Olana Adoptions",
       imageSrc: "/assets/OlanaHero.png",
+      href: "/projects/olanaadoptions",
     },
     {
       id: 2,
-      title: "Title project 2",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/a55c10e65bee59e9d0a81b735a6f021ce92e626c2af11f5cc808edc28418bcee?apiKey=04b03a6f932f43d5ac0f299cdc8c8e61&&apiKey=04b03a6f932f43d5ac0f299cdc8c8e61",
+      title: "Petsy",
+      imageSrc: "/assets/petsyimagev2.png",
+      href: "/",
     },
     // Add more projects as needed
   ];
@@ -38,20 +40,23 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex relative flex-col px-14 my-20 w-full max-md:px-5 max-md:max-w-full"
+      className="flex relative flex-col px-14 pt-20 w-full max-md:px-5 max-md:max-w-full"
     >
-      <div className="flex justify-center items-center pt-8 px-16 max-md:px-5 max-md:max-w-full">
+      <div className="flex justify-center items-center px-16 max-md:px-5 max-md:max-w-full">
         <SectionTitle title="Projects" />
       </div>
-      <div className="flex flex-col justify-center items-start px-16 pt-14 mt-12 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-col justify-center items-start px-16 pt-20 max-md:px-5 max-md:pt-20 max-md:max-w-full">
         {projectList.map((project, index) => (
+          // <Link href="/projects/olanaadoptions">
           <ProjectItem
             key={project.id}
             imageSrc={project.imageSrc}
             title={project.title}
+            href={project.href}
             height={cardHeight} // Apply consistent height
             className="project-card" // Add class for height calculation
           />
+          // </Link>
         ))}
       </div>
     </section>
