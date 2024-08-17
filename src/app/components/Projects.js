@@ -1,14 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import SectionTitle from "./Section Title";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
+  const [cardHeight, setCardHeight] = useState("auto");
+
   const projectList = [
     {
       id: 1,
       title: "Olana Adoptions",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/a55c10e65bee59e9d0a81b735a6f021ce92e626c2af11f5cc808edc28418bcee?apiKey=04b03a6f932f43d5ac0f299cdc8c8e61&&apiKey=04b03a6f932f43d5ac0f299cdc8c8e61",
+      imageSrc: "/assets/OlanaHero.png",
     },
     {
       id: 2,
@@ -18,6 +20,20 @@ const Projects = () => {
     },
     // Add more projects as needed
   ];
+
+  useEffect(() => {
+    const handleResize = () => {
+      const firstCard = document.querySelector(".project-card");
+      if (firstCard) {
+        setCardHeight(`${firstCard.offsetHeight}px`);
+      }
+    };
+
+    handleResize(); // Set initial height
+    window.addEventListener("resize", handleResize); // Recalculate on resize
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
+  }, [projectList]);
 
   return (
     <section
@@ -33,7 +49,8 @@ const Projects = () => {
             key={project.id}
             imageSrc={project.imageSrc}
             title={project.title}
-            isReversed={index % 2 !== 0} // Alternates the layout
+            height={cardHeight} // Apply consistent height
+            className="project-card" // Add class for height calculation
           />
         ))}
       </div>
