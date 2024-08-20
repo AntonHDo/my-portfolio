@@ -3,6 +3,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ProjectDetails from "../CaseStudyAsset/ProjectDetails";
+import ImageGallery from "../CaseStudyAsset/ImageGallery";
+import FigmaPrototype from "../CaseStudyAsset/FigmaPrototype";
+import CustomDivider from "../CaseStudyAsset/CustomerDivider";
 import { Container, Typography, Box, Grid } from "@mui/material";
 import SectionTitle from "@/app/components/Section Title"; // Make sure to adjust the import as per your actual file structure
 
@@ -16,8 +20,12 @@ const CaseStudyPage = () => {
         className="object-cover absolute inset-0 size-full opacity-25"
       />
       <Navbar />
-      <Container>
+      <Container className="z-10">
         {/* Project Overview */}
+        <ImageGallery />
+        <ProjectDetails />
+        <FigmaPrototype />
+        <CustomDivider />
         <Box sx={{ py: 8 }}>
           <SectionTitle title="Project Overview" />
           <Typography variant="h6" paragraph>
