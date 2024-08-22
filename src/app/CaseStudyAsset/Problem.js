@@ -1,5 +1,5 @@
 import React from "react";
-import ProblemTitle from "./ProblemTitle";
+import ProblemTitle from "./ProblemTItle";
 import ProblemDescription from "./ProblemDescription";
 import Box from "@mui/material/Box";
 
