@@ -10,7 +10,7 @@ function ProjectDetails() {
     <Container maxWidth="lg">
       <Box
         component="main"
-        className="flex flex-wrap justify-center items-start px-6 py-6 mt-24 w-full text-black max-md:px-5 max-md:mt-10 max-md:max-w-full"
+        className="flex flex-wrap justify-center items-start px-6 py-6 mt-24 w-full text-slate-200 max-md:px-5 max-md:mt-10 max-md:max-w-full"
       >
         <ProjectTitle title="Title Of Project" />
         <Box
