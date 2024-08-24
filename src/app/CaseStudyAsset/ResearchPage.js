@@ -11,37 +11,62 @@ function ResearchPage() {
       title: "Research",
       content: (
         <>
-          Research Goals and bullet points examples
-          <br />
-          With the goal of enhancing my understanding, I wanted to examine:
-          <br />
-          The current methodology in education and teaching.
-          <br />
-          Analyze current resources offered by competitor apps.
-          <br />
-          Identify student frustrations when studying.
+          With the goal of getting better at UX/UI design to help make adopting
+          a dog an easier process, I wanted to examine
+          <ul className="list-disc">
+            <li>
+              Simplify the Adoption Process: Streamline procedures to reduce
+              complexity and make the process more user-friendly. Enhance User
+            </li>
+            <li>
+              Experience: Design intuitive interfaces that guide users through
+              the adoption journey seamlessly.
+            </li>
+            <li>
+              Foster Emotional Connection: Create engaging content and visuals
+              that connect potential adopters with the dogs they meet online.
+            </li>
+          </ul>
         </>
       ),
     },
     {
       title: "Secondary",
-      content: "Secondary research on the problem that people are having",
+      content: (
+        <>
+          According to the ASPCA, <strong>34% of pet adopters</strong> found
+          their pets online. However, many adoption websites have poor
+          usability, making the adoption process more difficult. Enhancing
+          website design can <strong>significantly</strong> improve the chances
+          of finding homes for pets.
+        </>
+      ),
     },
     {
       title: "Competitive Analysis",
-      content:
-        "People had to go through several apps and websites to find a trusted person to adopt a dog because there are so many untrusted sites along with people out there.",
+      content: (
+        <>
+          Many pet adoption websites focus on either showcasing available pets
+          or providing adoption resources, often neglecting a seamless user
+          experience.{" "}
+          <strong>
+            Users frequently need to visit multiple sites to find comprehensive
+            information, leading to a fragmented and frustrating adoption
+            process.
+          </strong>
+        </>
+      ),
     },
     {
       title: "Primary",
       content: (
         <>
-          What are the current needs for families who are looking to adopt their
-          new best dog friend? Gather data from people who are looking to adopt
-          dogs
-          <br />
-          <br />
-          Use data to show your proof
+          <strong>What are the current needs of potential dog adopters?</strong>{" "}
+          To understand this question, I gathered insights from{" "}
+          <strong>20+ survey responses</strong> and conducted interviews with{" "}
+          <strong>7 individuals</strong> who have recently adopted or are
+          considering adopting a dog. With this data, I organized their
+          responses into affinity maps focusing on 3 main categories:
         </>
       ),
     },
@@ -49,12 +74,14 @@ function ResearchPage() {
       title: "User Personas",
       content: (
         <>
-          What are the current needs for families who are looking to adopt their
-          new best dog friend? Gather data from people who are looking to adopt
-          dogs
+          <Box>
+            How might we enhance the dog adoption experience for potential pet
+            owners?
+          </Box>
           <br />
-          <br />
-          Use data to show your proof
+          Based on patterns from my user insights, I developed three personas
+          representing common challenges and desires of individuals looking to
+          adopt a dog today.
         </>
       ),
     },

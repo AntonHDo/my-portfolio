@@ -8,14 +8,12 @@ import MyComponent from "../CaseStudyAsset/ReflectionPageComponent/MyComponent";
 import SolutionSection from "../CaseStudyAsset/SolutionPageComponent/SolutionSection";
 import TestingComponent from "../CaseStudyAsset/TestingPageComponent/TestingComponent";
 import DesignPage from "../CaseStudyAsset/DesignPageAsset/DesignPage";
+import Problem from "../CaseStudyAsset/ProblemPageComponents/Problem";
 import ResearchPage from "../CaseStudyAsset/ResearchPage";
-import Problem from "../CaseStudyAsset/Problem";
-import ProjectDetails from "../CaseStudyAsset/ProjectDetails";
-import ImageGallery from "../CaseStudyAsset/ImageGallery";
+import ProjectDetails from "../CaseStudyAsset/ProjectTitleAsset/ProjectDetails";
 import FigmaPrototype from "../CaseStudyAsset/FigmaPrototype";
 import CustomDivider from "../CaseStudyAsset/CustomerDivider";
 import { Container, Typography, Box, Grid } from "@mui/material";
-import SectionTitle from "@/app/components/Section Title"; // Make sure to adjust the import as per your actual file structure
 
 const CaseStudyPage = () => {
   return (
@@ -29,11 +27,12 @@ const CaseStudyPage = () => {
       <Navbar />
       <Container className="z-10">
         {/* Project Overview */}
-        <ImageGallery />
         <ProjectDetails />
+        <CustomDivider />
         <FigmaPrototype />
         <CustomDivider />
         <Problem />
+        <CustomDivider />
         <ResearchPage />
         <CustomDivider />
         <DesignPage />

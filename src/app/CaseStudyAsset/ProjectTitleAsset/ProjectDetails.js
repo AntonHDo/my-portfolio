@@ -10,12 +10,17 @@ function ProjectDetails() {
     <Container maxWidth="lg">
       <Box
         component="main"
-        className="flex flex-wrap justify-center items-start px-6 py-6 mt-24 w-full text-slate-200 max-md:px-5 max-md:mt-10 max-md:max-w-full"
+        className="flex flex-row justify-between  py-10 mt-10 w-full text-slate-200 max-md:flex-col max-md:px-5 max-md:mt-10 max-md:max-w-full"
       >
-        <ProjectTitle title="Title Of Project" />
         <Box
           component="section"
-          className="flex flex-col justify-center px-12 min-w-[240px] w-[1135px] max-md:px-5 max-md:max-w-full"
+          className="flex flex-col justify-start  min-w-[240px] w-1/3 max-md:w-full"
+        >
+          <ProjectTitle title="Olana Adoptions" />
+        </Box>
+        <Box
+          component="section"
+          className="flex flex-col justify-center  w-2/3 max-md:px-5 max-md:w-full"
         >
           <ProjectDescription />
           <ProjectInfo />

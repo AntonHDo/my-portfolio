@@ -14,15 +14,16 @@ function ProblemDescription() {
           component="h2"
           className="text-center text-3xl font-bold max-md:max-w-full"
         >
-          How does one adopt a dog with ease?
+          Why is adopting a dog so complicated?
         </Typography>
         <Typography
           variant="body1"
           component="p"
           className="mt-6 text-2xl max-md:max-w-full"
         >
-          More descriptionsMore descriptMore descriptionsMore descriptionsMore
-          descriptionsMore descriptionsMore descriptionsMore descriptionsMore
+          The current adoption process often overwhelms potential pet parents
+          with complex requirements and procedures, creating a disconnect
+          between those looking to provide a loving home and the dogs in need.
         </Typography>
       </Box>
     </Box>

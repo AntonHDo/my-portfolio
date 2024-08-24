@@ -4,22 +4,19 @@ import FeatureBlock from "./FeatureBlock";
 
 const features = [
   {
-    title: "Easy to use",
-    description: "Description of the project",
+    title: "Easy to Navigate",
     details:
-      "More descriptionsMore descriptMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore",
+      "A user-friendly interface ensures that visitors can easily find the information they need without confusion, making the adoption process smoother and more accessible.",
   },
   {
-    title: "Trusted",
-    description: "Description of the project",
+    title: "Fast responding",
     details:
-      "More descriptionsMore descriptMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore",
+      "Quick replies to inquiries keep potential adopters engaged and provide them with the information they need without long waits, enhancing their overall experience.",
   },
   {
-    title: "Fast Replies",
-    description: "Description of the project",
+    title: "Easy to search for dogs",
     details:
-      "More descriptionsMore descriptMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore descriptionsMore",
+      "Implementing an intuitive search feature allows users to quickly find dogs that match their preferences, making it easier for them to find their perfect companion.",
   },
 ];
 
@@ -45,7 +42,7 @@ function SolutionSection() {
               variant="h2"
               className="px-16 w-full max-md:px-5 max-md:max-w-full"
             >
-              Adopting your new best pup friend
+              Olana Adoptions, the solution to solve easy dog adoption.
             </Typography>
           </Box>
         </Box>

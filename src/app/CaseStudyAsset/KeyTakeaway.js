@@ -18,8 +18,9 @@ function KeyTakeaway() {
       </Box>
       <Box className="flex flex-col grow shrink self-stretch my-auto text-2xl min-w-[240px] w-[1055px] max-md:max-w-full">
         <Typography className="px-16 w-full max-md:px-5 max-md:max-w-full">
-          It's hard for people to find a trusted and easy way to adopt their new
-          dog.
+          Potential dog adopters often face challenges in finding comprehensive
+          and reliable information that matches their specific needs and
+          preferences during the adoption process.
         </Typography>
       </Box>
     </Box>

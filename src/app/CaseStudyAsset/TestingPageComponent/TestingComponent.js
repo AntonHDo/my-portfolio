@@ -8,8 +8,12 @@ function TestingComponent() {
   const sections = [
     {
       title: "Testing",
-      content:
-        "Write about the different iterations you did and reviews to lead you there",
+      content: (
+        <>
+          After multiple iterations, I made 4 significant improvements based on
+          the feedback gathered.
+        </>
+      ),
     },
     {
       title: "Navigating",
