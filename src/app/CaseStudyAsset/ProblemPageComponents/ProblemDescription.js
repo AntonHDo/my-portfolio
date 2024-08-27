@@ -19,7 +19,7 @@ function ProblemDescription() {
         <Typography
           variant="body1"
           component="p"
-          className="mt-6 text-2xl max-md:max-w-full"
+          className="mt-6 pb-20 text-2xl max-md:max-w-full"
         >
           The current adoption process often overwhelms potential pet parents
           with complex requirements and procedures, creating a disconnect

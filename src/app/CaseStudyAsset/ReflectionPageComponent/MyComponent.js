@@ -15,22 +15,24 @@ const MyComponent = () => {
     subtitle:
       "In the future, my focus will be on expanding the capabilities of Olana Adoptions to enhance the overall adoption experience for users.",
     description: (
-      <ul>
-        <li>
-          Real-time chat support - enables potential adopters to get immediate
-          responses to their inquiries and assistance throughout the adoption
-          process.
-        </li>
-        <li>
-          Advanced search filters - allows users to find the perfect dog based
-          on specific criteria like age, breed, and temperament.
-        </li>
-        <li>
-          Personalized adoption recommendations - provides users with tailored
-          suggestions based on their preferences and lifestyle, making the
-          adoption process even more seamless and user-friendly.
-        </li>
-      </ul>
+      <Box>
+        <ul className="list-disc">
+          <li>
+            Real-time chat support - enables potential adopters to get immediate
+            responses to their inquiries and assistance throughout the adoption
+            process.
+          </li>
+          <li>
+            Advanced search filters - allows users to find the perfect dog based
+            on specific criteria like age, breed, and temperament.
+          </li>
+          <li>
+            Personalized adoption recommendations - provides users with tailored
+            suggestions based on their preferences and lifestyle, making the
+            adoption process even more seamless and user-friendly.
+          </li>
+        </ul>
+      </Box>
     ),
   };
 

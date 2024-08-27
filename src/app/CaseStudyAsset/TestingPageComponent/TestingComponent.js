@@ -8,12 +8,15 @@ function TestingComponent() {
   const sections = [
     {
       title: "Testing",
-      content: (
-        <>
-          After multiple iterations, I made 4 significant improvements based on
-          the feedback gathered.
-        </>
-      ),
+      content: {
+        details: (
+          <>
+            {" "}
+            After multiple iterations, I made 4 significant improvements based
+            on the feedback gathered.
+          </>
+        ),
+      },
     },
     {
       title: "Navigating",

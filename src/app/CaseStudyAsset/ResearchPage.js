@@ -6,11 +6,23 @@ import KeyTakeaway from "./KeyTakeaway";
 import Box from "@mui/material/Box";
 
 function ResearchPage() {
+  const keyTakeawaySection = [
+    {
+      title: "Key Takeaway",
+      content: (
+        <Box>
+          Potential dog adopters often face challenges in finding comprehensive
+          and reliable information that matches their specific needs and
+          preferences during the adoption process.
+        </Box>
+      ),
+    },
+  ];
   const sections = [
     {
       title: "Research",
       content: (
-        <>
+        <Box>
           With the goal of getting better at UX/UI design to help make adopting
           a dog an easier process, I wanted to examine
           <ul className="list-disc">
@@ -27,25 +39,25 @@ function ResearchPage() {
               that connect potential adopters with the dogs they meet online.
             </li>
           </ul>
-        </>
+        </Box>
       ),
     },
     {
       title: "Secondary",
       content: (
-        <>
+        <Box>
           According to the ASPCA, <strong>34% of pet adopters</strong> found
           their pets online. However, many adoption websites have poor
           usability, making the adoption process more difficult. Enhancing
           website design can <strong>significantly</strong> improve the chances
           of finding homes for pets.
-        </>
+        </Box>
       ),
     },
     {
       title: "Competitive Analysis",
       content: (
-        <>
+        <Box>
           Many pet adoption websites focus on either showcasing available pets
           or providing adoption resources, often neglecting a seamless user
           experience.{" "}
@@ -54,7 +66,7 @@ function ResearchPage() {
             information, leading to a fragmented and frustrating adoption
             process.
           </strong>
-        </>
+        </Box>
       ),
     },
     {
@@ -73,7 +85,7 @@ function ResearchPage() {
     {
       title: "User Personas",
       content: (
-        <>
+        <Box>
           <Box>
             How might we enhance the dog adoption experience for potential pet
             owners?
@@ -82,7 +94,7 @@ function ResearchPage() {
           Based on patterns from my user insights, I developed three personas
           representing common challenges and desires of individuals looking to
           adopt a dog today.
-        </>
+        </Box>
       ),
     },
   ];
@@ -105,7 +117,18 @@ function ResearchPage() {
           {(index === 2 || index === 3 || index === 4) && <ImageGrid />}
         </Box>
       ))}
-      <KeyTakeaway />
+      {keyTakeawaySection.map((keyTakeawaySection, index) => (
+        <Box
+          key={index}
+          component="section"
+          className={`flex flex-wrap ${
+            index > 0 ? "mt-24 max-md:mt-10" : ""
+          } w-full`}
+        >
+          <SectionHeader title={keyTakeawaySection.title} />
+          <ContentBlock content={keyTakeawaySection.content} />
+        </Box>
+      ))}
     </Box>
   );
 }

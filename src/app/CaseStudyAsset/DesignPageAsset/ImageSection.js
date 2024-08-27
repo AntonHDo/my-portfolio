@@ -1,6 +1,6 @@
-import React from 'react';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import React from "react";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 function ImageSection({ title, description, imageContent }) {
   return (
@@ -17,7 +17,10 @@ function ImageSection({ title, description, imageContent }) {
           {title}
         </Typography>
         <Box className="flex flex-col justify-center text-3xl text-center min-w-[240px] w-[1135px] max-md:max-w-full">
-          <Typography className="flex flex-col justify-center px-3.5 w-full max-md:max-w-full">
+          <Typography
+            variant="body1"
+            className="flex flex-col justify-center px-3.5 w-full max-md:max-w-full"
+          >
             {description}
           </Typography>
         </Box>
