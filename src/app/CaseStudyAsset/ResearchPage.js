@@ -2,7 +2,6 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 import ContentBlock from "./ContentBlock";
 import ImageGrid from "./ImageGrid";
-import KeyTakeaway from "./KeyTakeaway";
 import Box from "@mui/material/Box";
 
 function ResearchPage() {

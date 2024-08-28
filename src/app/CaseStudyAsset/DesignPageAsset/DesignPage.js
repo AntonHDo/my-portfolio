@@ -74,24 +74,53 @@ function DesignPage() {
       ))}
       <Box />
       <ImageSection
-        title="Site Map"
+        title="Website Flow"
         imageContent={
-          <img
-            alt="Site Map"
-            src="/assets/Webside Flow for Olana Adoptions2.png"
-          />
+          <a
+            href="/assets/Webside Flow for Olana Adoptions2.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/assets/Webside Flow for Olana Adoptions2.png"
+              className="rounded-2xl"
+              alt="Website Flow"
+            />
+          </a>
         }
       />
       <ImageSection
         title="Lofi Wireframes"
         imageContent={
-          <img src="\assets\WireFrame for Petsite.png" alt="Lofi Wireframes" />
+          <a
+            href="/assets/WireFrame for Petsite.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="rounded-2xl"
+              src="/assets/WireFrame for Petsite.png"
+              alt="Lofi Wireframes"
+            />
+          </a>
         }
       />
+
       <ImageSection
         title="Design System"
-        description="Showcase the designs and components, icons, etc"
-        imageContent="Image of all the different design systems"
+        imageContent={
+          <a
+            href="\assets\Design System 2.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="rounded-2xl"
+              src="\assets\Design System 2.png"
+              alt="Design System"
+            />
+          </a>
+        }
       />
     </Box>
   );

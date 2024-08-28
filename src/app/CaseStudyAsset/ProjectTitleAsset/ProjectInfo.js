@@ -13,10 +13,10 @@ function ProjectInfo() {
   return (
     <Box
       component="section"
-      className="flex flex-col justify-center  px-20 w-full text-2xl max-md:mt-10 max-md:max-w-full"
+      className="flex flex-col justify-center px-20 w-full text-2xl max-md:mt-10 max-md:max-w-full"
     >
-      <Box className="flex flex-row gap-3 items-start py-6 w-full max-md:px-5 max-md:max-w-full">
-        <dl className="flex flex-col flex-1 shrink py-3 basis-0 min-w-[240px] max-md:max-w-full">
+      <Box className="flex flex-row flex-wrap gap-8 items-start py-6 w-full max-md:flex-col max-md:gap-3 max-md:px-5 max-md:max-w-full">
+        <dl className="flex flex-col flex-1 shrink py-3 basis-0 min-w-[240px] max-md:w-full max-md:min-w-0">
           {projectDetails.map((detail, index) => (
             <React.Fragment key={index}>
               <Typography
@@ -33,7 +33,7 @@ function ProjectInfo() {
             </React.Fragment>
           ))}
         </dl>
-        <dl className="flex flex-col flex-1 shrink py-3 basis-0 min-w-[240px] max-md:max-w-full">
+        <dl className="flex flex-col flex-1 shrink py-3 basis-0 min-w-[240px] max-md:w-full max-md:min-w-0">
           {projectDetails.map((detail, index) => (
             <Typography
               component="dd"
