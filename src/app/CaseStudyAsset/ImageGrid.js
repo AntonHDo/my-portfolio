@@ -1,19 +1,19 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import ImageGridItem from "./ImageGridItem"; // Adjust the import path as necessary
 
-function ImageGrid() {
+function ImageGrid({ items }) {
   return (
     <Box
       component="div"
-      className="flex flex-wrap justify-center items-center self-center mt-12 max-w-full text-4xl font-bold whitespace-nowrap w-[1392px] max-md:mt-10"
+      className="flex flex-row justify-center items-center mt-12 max-w-full text-4xl font-bold whitespace-nowrap max-md:flex max-md:flex-wrap "
     >
-      {[1, 2, 3].map((index) => (
-        <Box
+      {items.map((item, index) => (
+        <ImageGridItem
           key={index}
-          className="flex-1 shrink gap-2.5 self-stretch py-4 my-auto min-w-[240px] w-[257px]"
-        >
-          Image
-        </Box>
+          name={item.name}
+          imagePath={item.imagePath}
+        />
       ))}
     </Box>
   );

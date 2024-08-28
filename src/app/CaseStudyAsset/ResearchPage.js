@@ -98,6 +98,22 @@ function ResearchPage() {
     },
   ];
 
+  const logos = [
+    { name: "ASPCALogo", imagePath: "/assets/aspca.png" },
+    { name: "CuddlyLogo", imagePath: "/assets/cuddly.png" },
+    { name: "PetFinderLogo", imagePath: "/assets/petfinder.png" },
+  ];
+  const personas = [
+    { name: "ASPCALogo", imagePath: "/assets/aspca-logo-square.png" },
+    { name: "CuddlyLogo", imagePath: "/assets/cuddly.png" },
+    { name: "PetFinderLogo", imagePath: "/assets/petfinderLogo.png" },
+  ];
+  const primaries = [
+    { name: "ASPCALogo", imagePath: "/assets/EaseOfAdoption.png" },
+    { name: "CuddlyLogo", imagePath: "/assets/InformationAccessibility.png" },
+    { name: "PetFinderLogo", imagePath: "/assets/SupportAfter.png" },
+  ];
+
   return (
     <Box
       component="main"
@@ -113,14 +129,15 @@ function ResearchPage() {
         >
           <SectionHeader title={section.title} />
           <ContentBlock content={section.content} />
-          {(index === 2 || index === 3 || index === 4) && <ImageGrid />}
+          {index === 2 && <ImageGrid items={logos} />}
+          {index === 3 && <ImageGrid items={primaries} />}
         </Box>
       ))}
       {keyTakeawaySection.map((keyTakeawaySection, index) => (
         <Box
           key={index}
           component="section"
-          className={`flex flex-wrap ${
+          className={`flex flex-wrap py-20 ${
             index > 0 ? "mt-24 max-md:mt-10" : ""
           } w-full`}
         >
