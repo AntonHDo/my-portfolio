@@ -104,9 +104,9 @@ function ResearchPage() {
     { name: "PetFinderLogo", imagePath: "/assets/petfinder.png" },
   ];
   const personas = [
-    { name: "ASPCALogo", imagePath: "/assets/aspca-logo-square.png" },
-    { name: "CuddlyLogo", imagePath: "/assets/cuddly.png" },
-    { name: "PetFinderLogo", imagePath: "/assets/petfinderLogo.png" },
+    { name: "ChrisPersona", imagePath: "/assets/Chris.png" },
+    { name: "SuePersona", imagePath: "/assets/Suee.png" },
+    { name: "EvanPersona", imagePath: "/assets/Evan.png" },
   ];
   const primaries = [
     { name: "ASPCALogo", imagePath: "/assets/EaseOfAdoption.png" },
@@ -131,6 +131,7 @@ function ResearchPage() {
           <ContentBlock content={section.content} />
           {index === 2 && <ImageGrid items={logos} />}
           {index === 3 && <ImageGrid items={primaries} />}
+          {index === 4 && <ImageGrid items={personas} />}
         </Box>
       ))}
       {keyTakeawaySection.map((keyTakeawaySection, index) => (

@@ -122,6 +122,22 @@ function DesignPage() {
           </a>
         }
       />
+      <ImageSection
+        title="Components"
+        imageContent={
+          <a
+            href="\assets\Components.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="rounded-2xl bg-slate-500 mb-20"
+              src="\assets\Components.png"
+              alt="Components"
+            />
+          </a>
+        }
+      />
     </Box>
   );
 }

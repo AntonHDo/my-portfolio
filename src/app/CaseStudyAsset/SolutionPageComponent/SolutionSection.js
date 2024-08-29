@@ -32,7 +32,7 @@ function SolutionSection() {
       >
         <Typography
           variant="h1"
-          className="grow shrink gap-2.5 self-start py-4 w-80 text-6xl whitespace-nowrap min-w-[240px] max-md:text-4xl"
+          className="grow shrink gap-2.5 self-start py-4 w-80 text-5xl whitespace-nowrap min-w-[240px] max-md:text-4xl"
         >
           Solution
         </Typography>
