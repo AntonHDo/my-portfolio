@@ -14,10 +14,13 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
 
   return (
     <Grid
-      container
-      justifyContent="center"
-      alignItems="center"
-      className="mb-12 w-full pb-20 max-md:mb-0 max-md:pb-20"
+      item
+      xs={12}
+      sm={6}
+      md={6}
+      lg={4}
+      xl={3}
+      className="w-full mb-12 pb-20 max-md:mb-0 max-md:pb-20"
     >
       <Link href={href}>
         <Box
@@ -33,7 +36,7 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
             display: "flex",
             flexDirection: "column",
           }}
-          className="max-w-full w-[990px]  bg-slate-200"
+          className=" bg-slate-200"
         >
           <Grid
             container
@@ -46,7 +49,7 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
               xs={12}
               className="flex justify-center items-center text-center pb-6 max-md:pb-3"
             >
-              <p className="text-center text-6xl text-slate-500 max-md:text-3xl">
+              <p className="text-center text-4xl md:text-6xl text-slate-500 max-md:text-3xl">
                 {title}
               </p>
             </Grid>
@@ -55,7 +58,7 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
                 loading="lazy"
                 src={imageSrc}
                 alt={title}
-                className="max-w-full rounded-lg"
+                className="max-w-full rounded-lg object-cover"
               />
             </Grid>
           </Grid>

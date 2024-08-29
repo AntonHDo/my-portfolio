@@ -6,7 +6,7 @@ function KeyTakeaway() {
   return (
     <Box
       component="section"
-      className="flex flex-wrap items-center px-6 mt-24 w-full font-bold max-md:px-5 max-md:mt-10 max-md:max-w-full"
+      className="flex flex-wrap items-center px-6 mt-20 w-full font-bold max-md:px-5 max-md:mt-10 max-md:max-w-full"
     >
       <Box
         component="header"

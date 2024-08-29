@@ -42,8 +42,8 @@ const CaseStudyPage = () => {
         <SolutionSection />
         <CustomDivider />
         <MyComponent />
-        <CustomDivider />
-        <SeeMore />
+        {/* <CustomDivider /> */}
+        {/* <SeeMore /> */}
       </Container>
       <Footer />
     </Box>

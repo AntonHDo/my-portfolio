@@ -4,7 +4,7 @@
 // const NextStepsSection = ({ title, content }) => (
 //   <Box
 //     component="section"
-//     className="flex flex-wrap justify-center items-start px-6 mt-24 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full"
+//     className="flex flex-wrap justify-center items-start px-6 mt-20 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full"
 //   >
 //     <Typography
 //       variant="h2"

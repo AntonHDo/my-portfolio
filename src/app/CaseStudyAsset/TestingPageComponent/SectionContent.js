@@ -15,7 +15,7 @@ function SectionContent({ content }) {
             <>
               <Typography
                 variant="h5"
-                className="text-3xl text-center max-md:max-w-full"
+                className="text-3xl pb-5 text-start max-md:max-w-full"
               >
                 {content.description}
               </Typography>

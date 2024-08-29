@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
+import CustomDivider from "../CaseStudyAsset/CustomerDivider";
 
 const Footer = () => {
   return (
@@ -7,8 +8,8 @@ const Footer = () => {
       component="footer"
       className="relative flex flex-col items-center px-16 w-full max-md:px-5 max-md:max-w-full"
     >
-      <Box className="shrink-0 max-w-full h-1.5 bg-slate-200 bg-opacity-70 w-[996px]" />
-      <h2 className="mt-24 text-4xl text-center text-slate-200  border-slate-200 border-opacity-50 tracking-[2px] max-md:mt-24 max-md:max-w-full">
+      <CustomDivider />
+      <h2 className="mt-20 text-4xl text-center text-slate-200  border-slate-200 border-opacity-50 tracking-[2px] max-md:mt-20 max-md:max-w-full">
         Stay Connected With Me!
       </h2>
       <Box className="flex gap-8 justify-center items-start py-20">

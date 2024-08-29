@@ -69,7 +69,7 @@ const Contact = () => {
           type="text"
           value={formData.name}
           onChange={handleChange}
-          className="px-4 py-2.5 rounded-md border border-solid bg-stone-100 border-stone-300 max-md:max-w-full"
+          className="px-4 py-2.5 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:max-w-full"
           placeholder="Name"
           required
         />
@@ -82,7 +82,7 @@ const Contact = () => {
           type="email"
           value={formData.email}
           onChange={handleChange}
-          className="px-4 py-2.5 mt-16 rounded-md border border-solid bg-stone-100 border-stone-300 max-md:pr-5 max-md:mt-10 max-md:max-w-full"
+          className="px-4 py-2.5 mt-16 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:pr-5 max-md:mt-10 max-md:max-w-full"
           placeholder="Email"
           required
         />
@@ -95,7 +95,7 @@ const Contact = () => {
           type="text"
           value={formData.subject}
           onChange={handleChange}
-          className="px-4 py-2.5 mt-16 rounded-md border border-solid bg-stone-100 border-stone-300 max-md:pr-5 max-md:mt-10 max-md:max-w-full"
+          className="px-4 py-2.5 mt-16 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:pr-5 max-md:mt-10 max-md:max-w-full"
           placeholder="Subject"
           required
         />
@@ -107,14 +107,14 @@ const Contact = () => {
           id="message"
           value={formData.message}
           onChange={handleChange}
-          className="px-4 pt-2.5 pb-6 mt-16 rounded-md border border-solid bg-stone-100 border-stone-300 max-md:mt-10 max-md:max-w-full"
+          className="px-4 pt-2.5 pb-6 mt-16 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:mt-10 max-md:max-w-full"
           placeholder="Message"
           required
         ></textarea>
 
         <button
           type="submit"
-          className="self-center px-4 py-2.5 mt-16 text-2xl text-center text-white rounded-md border border-solid bg-slate-400 border-neutral-300 max-md:mt-10"
+          className="self-center px-4 py-2.5 mt-16 text-2xl text-center text-stone-200 rounded-md border border-solid bg-slate-400 border-neutral-300 max-md:mt-10"
         >
           Submit
         </button>

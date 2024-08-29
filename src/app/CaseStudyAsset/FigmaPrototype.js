@@ -19,7 +19,7 @@ const FigmaPrototype = () => {
         className="flex flex-row items-center gap-8 pt-20 flex-wrap max-md:flex-col"
         style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
       >
-        <Box className="flex-1 w-full max-w-full">
+        <Box className="flex-1 basis-2/6 w-full max-w-full">
           <iframe
             style={{
               border: "1px solid rgba(0, 0, 0, 0.1)",

@@ -21,14 +21,14 @@ function SeeMore() {
   return (
     <Box
       component="main"
-      className="flex flex-col self-center mt-24 w-full text-slate-200 max-w-[1583px] max-md:mt-10 max-md:max-w-full"
+      className="flex flex-col self-center my-20 w-full text-slate-200 max-w-[1583px] max-md:mt-10 max-md:max-w-full"
     >
       {sections.map((section, index) => (
         <Box
           key={index}
           component="section"
           className={`flex flex-wrap ${
-            index > 0 ? "mt-24 max-md:mt-10" : ""
+            index > 0 ? "mt-20 max-md:mt-10" : ""
           } w-full`}
         >
           <SectionHeader title={section.title} />

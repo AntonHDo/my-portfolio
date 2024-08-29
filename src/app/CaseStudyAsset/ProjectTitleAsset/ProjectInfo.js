@@ -6,7 +6,32 @@ const projectDetails = [
   { label: "Role", value: "UX / UI, Developer" },
   { label: "Team", value: "Anton" },
   { label: "Timeline", value: "3 Month" },
-  { label: "Project Link", value: "Somewhere" },
+  {
+    label: "Project Link",
+    value: (
+      <Box>
+        <a
+          href="https://www.figma.com/proto/oiWtSMmZLMs84nFbIgSgqb/WireFrame-for-Petsite?node-id=265-1455&t=SVOxFZARsEnWErPn-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Prototype"
+          className="underline"
+        >
+          Prototype
+        </a>{" "}
+        /{" "}
+        <a
+          href="https://www.figma.com/design/oiWtSMmZLMs84nFbIgSgqb/WireFrame-for-Petsite?node-id=265-1455&t=SVOxFZARsEnWErPn-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Figma File"
+          className="underline"
+        >
+          Figma File
+        </a>
+      </Box>
+    ),
+  },
 ];
 
 function ProjectInfo() {

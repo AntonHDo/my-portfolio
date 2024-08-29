@@ -7,7 +7,7 @@ function Problem() {
   return (
     <Box
       component="section"
-      className="flex flex-col px-6 mt-24 w-full text-slate-200 max-md:px-5 max-md:mt-10 max-md:max-w-full"
+      className="flex flex-col px-6 mt-20 w-full text-slate-200 max-md:px-5 max-md:mt-10 max-md:max-w-full"
     >
       <ProblemTitle />
       <ProblemDescription />

@@ -40,12 +40,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex relative flex-col px-14 pt-20 w-full max-md:px-5 max-md:max-w-full"
+      className="flex relative flex-col justify-center items-center px-14 pt-20 w-full max-md:px-5 max-md:max-w-full"
     >
       <div className="flex justify-center items-center px-16 max-md:px-5 max-md:max-w-full">
         <SectionTitle title="Projects" />
       </div>
-      <div className="flex flex-col justify-center items-start px-16 pt-20 max-md:px-5 max-md:pt-20 max-md:max-w-full">
+      <div className="flex flex-col justify-center w-[70%] items-start px-16 pt-20 max-md:px-5 max-md:pt-20 max-md:max-w-full">
         {projectList.map((project, index) => (
           // <Link href="/projects/olanaadoptions">
           <ProjectItem

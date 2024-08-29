@@ -5,6 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import CustomDivider from "../CaseStudyAsset/CustomerDivider";
 
 const Layout = () => {
   return (
@@ -19,14 +20,15 @@ const Layout = () => {
       <main>
         <Hero />
         <About />
-        <div className="flex relative justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
-          <div className="shrink-0 max-w-full h-1.5 bg-slate-200 bg-opacity-70 w-[996px]" />
+        <div className="flex relative justify-center items-center px-20 w-full max-md:px-5 max-md:max-w-full">
+          <CustomDivider />
         </div>
         <Projects />
         <div className="flex relative justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
-          <div className="shrink-0 max-w-full h-1.5 bg-slate-200 bg-opacity-70 w-[996px]" />
+          <CustomDivider />
         </div>
         <Contact />
+        <div className="flex relative justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full"></div>
       </main>
       <Footer />
     </div>
