@@ -61,7 +61,7 @@ const Navbar = () => {
           Contact
         </a>
         <a
-          href="/path/to/your-resume.pdf" // Replace with the actual path to your resume
+          href="/assets/My Resume .pdf" // Replace with the actual path to your resume
           target="_blank"
           rel="noopener noreferrer"
           className="self-start"
