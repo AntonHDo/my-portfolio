@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="flex relative justify-between items-center px-8 py-1.5 text-slate-200 max-md:px-5 max-md:py-4">
+    <header className="flex relative justify-between items-center px-20  text-slate-200 max-md:px-5 max-md:py-4">
       <Link href="/">
         <h1 className="my-auto text-5xl font-medium border-slate-200 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
           Anton Do
@@ -54,11 +54,19 @@ const Navbar = () => {
       </div>
 
       {/* Standard navigation links (hidden on mobile) */}
-      <nav className="hidden md:flex gap-8 py-8 text-2xl whitespace-nowrap">
+      <nav className="hidden md:flex gap-20 py-8 text-2xl whitespace-nowrap">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact" className="self-start">
           Contact
+        </a>
+        <a
+          href="/path/to/your-resume.pdf" // Replace with the actual path to your resume
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-start"
+        >
+          Resume
         </a>
       </nav>
 

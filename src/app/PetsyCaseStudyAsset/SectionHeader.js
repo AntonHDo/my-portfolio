@@ -8,9 +8,9 @@ function SectionHeader({ title }) {
       component="header"
       className="gap-2.5 self-stretch py-4 min-w-[240px] w-[400px]"
     >
-      <Box variant="h4" component="h1" className="font-bold text-4xl">
+      <Typography variant="h4" component="h1" className="font-bold">
         {title}
-      </Box>
+      </Typography>
     </Box>
   );
 }

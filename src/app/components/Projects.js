@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import SectionTitle from "./Section Title";
 import ProjectItem from "./ProjectItem";
 
@@ -18,7 +17,7 @@ const Projects = () => {
       id: 2,
       title: "Petsy",
       imageSrc: "/assets/petsyimagev2.png",
-      href: "/",
+      href: "/projects/petsy",
     },
     // Add more projects as needed
   ];

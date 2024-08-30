@@ -1,18 +1,18 @@
 "use client";
 
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import SeeMore from "../CaseStudyAsset/SeeMorePageComponent/SeeMore";
-import MyComponent from "../CaseStudyAsset/ReflectionPageComponent/MyComponent";
-import SolutionSection from "../CaseStudyAsset/SolutionPageComponent/SolutionSection";
-import TestingComponent from "../CaseStudyAsset/TestingPageComponent/TestingComponent";
-import DesignPage from "../CaseStudyAsset/DesignPageAsset/DesignPage";
-import Problem from "../CaseStudyAsset/ProblemPageComponents/Problem";
-import ResearchPage from "../CaseStudyAsset/ResearchPage";
-import ProjectDetails from "../CaseStudyAsset/ProjectTitleAsset/ProjectDetails";
-import FigmaPrototype from "../CaseStudyAsset/FigmaPrototype";
-import CustomDivider from "../CaseStudyAsset/CustomerDivider";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import SeeMore from "./SeeMorePageComponent/SeeMore";
+import MyComponent from "./ReflectionPageComponent/MyComponent";
+import SolutionSection from "./SolutionPageComponent/SolutionSection";
+import TestingComponent from "./TestingPageComponent/TestingComponent";
+import DesignPage from "./DesignPageAsset/DesignPage";
+import Problem from "./ProblemPageComponents/Problem";
+import ResearchPage from "./ResearchPage";
+import ProjectDetails from "./ProjectTitleAsset/ProjectDetails";
+import FigmaPrototype from "./FigmaPrototype";
+import CustomDivider from "./CustomerDivider";
 import { Container, Typography, Box, Grid } from "@mui/material";
 
 const CaseStudyPage = () => {
