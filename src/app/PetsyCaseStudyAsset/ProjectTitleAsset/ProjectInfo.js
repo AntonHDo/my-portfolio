@@ -4,12 +4,22 @@ import Box from "@mui/material/Box";
 
 const projectDetails = [
   { label: "Role", value: "UX / UI, Developer" },
-  { label: "Team", value: "Anton" },
-  { label: "Timeline", value: "3 Month" },
+  { label: "Team", value: "Anton, Jordan, Clarence, Sean" },
+  { label: "Timeline", value: "2 Weeks" },
   {
     label: "Project Link",
     value: (
       <Box>
+        <a
+          href="https://aa-flask-project.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Live Site"
+          className="underline"
+        >
+          Live Site
+        </a>{" "}
+        /{" "}
         <a
           href="https://www.figma.com/proto/oiWtSMmZLMs84nFbIgSgqb/WireFrame-for-Petsite?node-id=265-1455&t=SVOxFZARsEnWErPn-1"
           target="_blank"

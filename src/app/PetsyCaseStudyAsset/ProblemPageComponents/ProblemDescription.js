@@ -14,16 +14,18 @@ function ProblemDescription() {
           component="h2"
           className="text-center text-3xl font-bold max-md:max-w-full"
         >
-          Why is adopting a dog so complicated?
+          Why is finding the right pet products so difficult?
         </Typography>
         <Typography
           variant="body1"
           component="p"
           className="mt-6 pb-20 text-2xl max-md:max-w-full"
         >
-          The current adoption process often overwhelms potential pet parents
-          with complex requirements and procedures, creating a disconnect
-          between those looking to provide a loving home and the dogs in need.
+          Pet owners often struggle to find quality, affordable pet products
+          that meet their pets' specific needs. The overwhelming number of
+          choices and lack of personalized recommendations create frustration,
+          leaving pet parents unsure if they're making the best decisions for
+          their furry friends.
         </Typography>
       </Box>
     </Box>

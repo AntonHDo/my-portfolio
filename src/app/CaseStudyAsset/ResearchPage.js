@@ -27,11 +27,11 @@ function ResearchPage() {
           <ul className="list-disc">
             <li>
               Simplify the Adoption Process: Streamline procedures to reduce
-              complexity and make the process more user-friendly. Enhance User
+              complexity and make the process more user-friendly.
             </li>
             <li>
-              Experience: Design intuitive interfaces that guide users through
-              the adoption journey seamlessly.
+              Enhance User Experience: Design intuitive interfaces that guide
+              users through the adoption journey seamlessly.
             </li>
             <li>
               Foster Emotional Connection: Create engaging content and visuals
