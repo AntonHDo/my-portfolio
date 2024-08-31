@@ -12,6 +12,22 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
     }
   }, [height]);
 
+  // Handle mouse movement for the 3D effect and zoom in
+  const handleMouseMove = (e) => {
+    const rect = boxRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    boxRef.current.style.transform = `perspective(1200px) rotateX(${
+      -y / 80
+    }deg) rotateY(${x / 80}deg) scale(1.07)`;
+  };
+
+  const handleMouseLeave = () => {
+    boxRef.current.style.transform =
+      "perspective(1200px) rotateX(0) rotateY(0) scale(1)";
+  };
+
   return (
     <Grid
       item
@@ -20,7 +36,7 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
       md={6}
       lg={4}
       xl={3}
-      className="w-full mb-12 pb-20 max-md:mb-0 max-md:pb-20"
+      className="w-full pb-20 max-md:mb-0 max-md:pb-20"
     >
       <Link href={href}>
         <Box
@@ -35,8 +51,11 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
             },
             display: "flex",
             flexDirection: "column",
+            transition: "transform 0.3s ease-out", // Smooth transition for hover effect
           }}
-          className=" bg-slate-200"
+          className="bg-slate-200 opacity-85"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
         >
           <Grid
             container
@@ -53,12 +72,16 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
                 {title}
               </p>
             </Grid>
-            <Grid item xs={12} className="flex justify-center md:justify-start">
+            <Grid
+              item
+              xs={12}
+              className="flex justify-center bg-slate-700 rounded-xl md:justify-start"
+            >
               <img
                 loading="lazy"
                 src={imageSrc}
                 alt={title}
-                className="max-w-full rounded-lg object-cover"
+                className="max-w-full rounded-lg object-cover opacity-80"
               />
             </Grid>
           </Grid>

@@ -55,7 +55,7 @@ const Contact = () => {
       className="flex relative flex-col items-center mt-20 w-full max-md:mt-20 max-md:max-w-full"
     >
       <div className="flex justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
-        <SectionTitle title="Contact Me" />
+        <SectionTitle title="Contact Me!" />
       </div>
       <form
         onSubmit={handleSubmit}

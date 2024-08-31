@@ -1,5 +1,4 @@
 import React from "react";
-import CustomDivider from "../CaseStudyAsset/CustomerDivider";
 
 const SectionTitle = ({ title }) => {
   return (

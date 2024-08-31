@@ -54,12 +54,12 @@ const Navbar = () => {
       </div>
 
       {/* Standard navigation links (hidden on mobile) */}
-      <nav className="hidden md:flex gap-20 py-8 text-2xl whitespace-nowrap">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" className="self-start">
+      <nav className="hidden md:flex gap-20 py-8 text-xl whitespace-nowrap">
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <Link href="/contact" className="self-start">
           Contact
-        </a>
+        </Link>
         <a
           href="/assets/My Resume .pdf" // Replace with the actual path to your resume
           target="_blank"
@@ -73,13 +73,13 @@ const Navbar = () => {
       {/* Dropdown menu (shown when hamburger is clicked) */}
       {isMenuOpen && (
         <nav className="absolute top-20 right-0 bg-stone-800 bg-opacity-85 p-5 rounded-lg shadow-lg w-full md:hidden z-10 menu-container">
-          <a href="#about" className="block py-2">
+          <a href="/about" className="block py-2">
             About
           </a>
-          <a href="#projects" className="block py-2">
+          <a href="/projects" className="block py-2">
             Projects
           </a>
-          <a href="#contact" className="block py-2">
+          <a href="/contact" className="block py-2">
             Contact
           </a>
         </nav>
