@@ -6,7 +6,7 @@ function ImageSection({ title, description, imageContent }) {
   return (
     <Box
       component="section"
-      className="flex flex-col items-center mt-20 w-full min-h-[240px] max-md:px-5 max-md:mt-10 max-md:max-w-full"
+      className="flex flex-col items-center my-20 w-full min-h-[240px] max-md:px-5 max-md:mt-10 max-md:max-w-full"
     >
       <Box className="flex flex-wrap justify-between w-full min-h-[120px] max-md:max-w-full">
         <Typography variant="h4" component="h1" className="font-bold">

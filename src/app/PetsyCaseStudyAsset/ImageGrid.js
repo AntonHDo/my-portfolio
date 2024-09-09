@@ -10,6 +10,7 @@ function ImageGrid({ items }) {
     >
       {items.map((item, index) => (
         <ImageGridItem
+          title={item.title}
           key={index}
           name={item.name}
           imagePath={item.imagePath}

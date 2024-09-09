@@ -10,9 +10,9 @@ function ResearchPage() {
       title: "Key Takeaway",
       content: (
         <Box>
-          Potential dog adopters often face challenges in finding comprehensive
-          and reliable information that matches their specific needs and
-          preferences during the adoption process.
+          Potential pet product shoppers often struggle to find reliable and
+          relevant information tailored to their pets' unique needs, making the
+          shopping experience overwhelming and frustrating.
         </Box>
       ),
     },
@@ -22,20 +22,23 @@ function ResearchPage() {
       title: "Research",
       content: (
         <Box>
-          With the goal of getting better at UX/UI design to help make adopting
-          a dog an easier process, I wanted to examine
+          With the goal of improving my eCommerce UX/UI design and to help
+          people find high quality pet products, I wanted to examine
           <ul className="list-disc">
             <li>
-              Simplify the Adoption Process: Streamline procedures to reduce
-              complexity and make the process more user-friendly. Enhance User
+              Simplify Product Discovery: Refine the process of finding quality
+              pet products by creating an intuitive and user-friendly shopping
+              interface.
             </li>
             <li>
-              Experience: Design intuitive interfaces that guide users through
-              the adoption journey seamlessly.
+              Enhance User Experience: Design seamless and engaging interactions
+              that guide users effortlessly through the process of selecting and
+              purchasing pet products.
             </li>
             <li>
-              Foster Emotional Connection: Create engaging content and visuals
-              that connect potential adopters with the dogs they meet online.
+              Solve Challenges in Pet Product Search: Address common pain points
+              for pet owners by ensuring they can easily discover and buy the
+              best products for their pets.
             </li>
           </ul>
         </Box>
@@ -45,11 +48,12 @@ function ResearchPage() {
       title: "Secondary",
       content: (
         <Box>
-          According to the ASPCA, <strong>34% of pet adopters</strong> found
-          their pets online. However, many adoption websites have poor
-          usability, making the adoption process more difficult. Enhancing
-          website design can <strong>significantly</strong> improve the chances
-          of finding homes for pets.
+          According to recent studies, 70% of pet owners face challenges in
+          finding the right products online. However, many pet product websites
+          lack user-friendly design, making the shopping experience frustrating.
+          By improving website usability, Petsy aims to make it easier for pet
+          parents to discover the perfect products for their furry friends,
+          ensuring a simple and enjoyable shopping journey.
         </Box>
       ),
     },
@@ -57,13 +61,14 @@ function ResearchPage() {
       title: "Competitive Analysis",
       content: (
         <Box>
-          Many pet adoption websites focus on either showcasing available pets
-          or providing adoption resources, often neglecting a seamless user
-          experience.{" "}
+          Many pet eCommerce websites prioritize pushing products over user
+          experience, making it difficult for pet owners to find the right
+          items. Confusing navigation often leads to frustration, leaving
+          customers unsure if the products they’re viewing are truly the best
+          fit for their pets’ needs.{" "}
           <strong>
-            Users frequently need to visit multiple sites to find comprehensive
-            information, leading to a fragmented and frustrating adoption
-            process.
+            Users frequently need to visit multiple sites to gather information,
+            further adding to the frustrating experience.
           </strong>
         </Box>
       ),
@@ -72,12 +77,14 @@ function ResearchPage() {
       title: "Primary",
       content: (
         <>
-          <strong>What are the current needs of potential dog adopters?</strong>{" "}
-          To understand this question, I gathered insights from{" "}
-          <strong>20+ survey responses</strong> and conducted interviews with{" "}
-          <strong>7 individuals</strong> who have recently adopted or are
-          considering adopting a dog. With this data, I organized their
-          responses into affinity maps focusing on 3 main categories:
+          <strong>
+            What are the current needs of pet owners shopping online?
+          </strong>{" "}
+          To gathered insights on this, I conducted interviews with over 7
+          individuals who frequently purchase pet products. Using this data, I
+          organized their responses into affinity maps, focusing on three main
+          categories: ease of finding products, trust in product quality, and
+          overall shopping experience.
         </>
       ),
     },
@@ -86,32 +93,33 @@ function ResearchPage() {
       content: (
         <Box>
           <Box className="text-2xl font-bold">
-            How might we enhance the dog adoption experience for potential pet
-            owners?
+            How might we improve the online shopping experience for pet owners,
+            making it easier for them to find and trust the right products for
+            their pets?
           </Box>
           <br />
           Based on patterns from my user insights, I developed three personas
-          representing common challenges and desires of individuals looking to
-          adopt a dog today.
+          representing common challenges and desires of individuals who are avid
+          pet product shoppers.
         </Box>
       ),
     },
   ];
 
   const logos = [
-    { name: "ASPCALogo", imagePath: "/assets/aspca.png" },
-    { name: "CuddlyLogo", imagePath: "/assets/cuddly.png" },
-    { name: "PetFinderLogo", imagePath: "/assets/petfinder.png" },
+    { title: "Chewy", name: "Chewy", imagePath: "/assets/ChewyLogo.png" },
+    { title: "Petco", name: "Petco", imagePath: "/assets/PetcoLogo.png" },
+    { title: "Amazon", name: "Amazon", imagePath: "/assets/AmazonLogo.png" },
   ];
   const personas = [
-    { name: "ChrisPersona", imagePath: "/assets/Chris.png" },
-    { name: "SuePersona", imagePath: "/assets/Suee.png" },
-    { name: "EvanPersona", imagePath: "/assets/Evan.png" },
+    { title: "", name: "Kevin", imagePath: "/assets/KevinCard.png" },
+    { title: "", name: "Sandra", imagePath: "/assets/SandraCard.png" },
+    { title: "", name: "Ivana", imagePath: "/assets/IvanaCard.png" },
   ];
   const primaries = [
-    { name: "ASPCALogo", imagePath: "/assets/EaseOfAdoption.png" },
-    { name: "CuddlyLogo", imagePath: "/assets/InformationAccessibility.png" },
-    { name: "PetFinderLogo", imagePath: "/assets/SupportAfter.png" },
+    { title: "", name: "", imagePath: "/assets/EaseOfFindingProducts.png" },
+    { title: "", name: "", imagePath: "/assets/TrustInProductQuality.png" },
+    { title: "", name: "", imagePath: "/assets/ShoppingExperience.png" },
   ];
 
   return (

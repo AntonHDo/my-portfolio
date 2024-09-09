@@ -99,9 +99,13 @@ function ResearchPage() {
   ];
 
   const logos = [
-    { name: "ASPCALogo", imagePath: "/assets/aspca.png" },
-    { name: "CuddlyLogo", imagePath: "/assets/cuddly.png" },
-    { name: "PetFinderLogo", imagePath: "/assets/petfinder.png" },
+    { title: "ASPCA", name: "ASPCALogo", imagePath: "/assets/aspca.png" },
+    { title: "Cuddly", name: "CuddlyLogo", imagePath: "/assets/cuddly.png" },
+    {
+      title: "Petfinder",
+      name: "PetFinderLogo",
+      imagePath: "/assets/petfinder.png",
+    },
   ];
   const personas = [
     { name: "ChrisPersona", imagePath: "/assets/Chris.png" },

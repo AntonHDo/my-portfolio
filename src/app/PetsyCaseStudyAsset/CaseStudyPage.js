@@ -29,8 +29,8 @@ const CaseStudyPage = () => {
         {/* Project Overview */}
         <ProjectDetails />
         <CustomDivider />
-        <FigmaPrototype />
-        <CustomDivider />
+        {/* <FigmaPrototype />
+        <CustomDivider /> */}
         <Problem />
         <CustomDivider />
         <ResearchPage />

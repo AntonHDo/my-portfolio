@@ -4,19 +4,19 @@ import FeatureBlock from "./FeatureBlock";
 
 const features = [
   {
-    title: "Easy to Navigate",
+    title: "AI customer support bot",
     details:
-      "A user-friendly interface ensures that visitors can easily find the information they need without confusion, making the adoption process smoother and more accessible.",
+      "Have a personal AI bot that has knowledge of what products are best for all types of different pets.",
   },
   {
-    title: "Fast responding",
+    title: "Consultations with pet experts",
     details:
-      "Quick replies to inquiries keep potential adopters engaged and provide them with the information they need without long waits, enhancing their overall experience.",
+      "To make users feel more secured and confident in their choice of purchasing a product, we offer them one free consultation with a pet expert to help guide them to make a more confident choice.",
   },
   {
-    title: "Easy to search for dogs",
+    title: "Backed up researched pet products",
     details:
-      "Implementing an intuitive search feature allows users to quickly find dogs that match their preferences, making it easier for them to find their perfect companion.",
+      "Every product that is available on Petsy has been reviewed and backed up by experts to ensure that they are top quality.",
   },
 ];
 
@@ -42,7 +42,7 @@ function SolutionSection() {
               variant="h5"
               className="px-16 text-center font-bold w-full max-md:px-5 max-md:max-w-full"
             >
-              Olana Adoptions, the solution to solve easy dog adoption.
+              Petsy, the solution to easy and confident pet product shopping.
             </Typography>
           </Box>
         </Box>

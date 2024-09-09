@@ -16,7 +16,7 @@ function ProjectDetails() {
           component="section"
           className="flex flex-col justify-start  min-w-[240px] w-1/3 max-md:w-full"
         >
-          <ProjectTitle title="Olana Adoptions" />
+          <ProjectTitle title="Petsy" />
         </Box>
         <Box
           component="section"

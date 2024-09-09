@@ -14,15 +14,17 @@ function ProjectDescription() {
           component="h2"
           className="text-left text-3xl font-bold max-md:max-w-full"
         >
-          Dog adoption web app that helps dogs find a new home
+          An eCommerce web app that helps people find high quality pet products
+          at an affordable price
         </Typography>
         <Typography
           variant="body1"
           component="p"
           className="mt-4 text-2xl max-md:max-w-full"
         >
-          Olana Adoptions helps dogs find their new forever home in the
-          simpliest way. From easy ways to contact the company, to fast replies.
+          At Petsy, we’re here to help pet parents find just the right products
+          for their beloved furry family members. Whether it’s nutritious food
+          or essential supplies, Petsy has you covered with love and care.
         </Typography>
       </Box>
     </Box>

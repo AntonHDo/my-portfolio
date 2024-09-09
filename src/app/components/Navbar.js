@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="flex relative justify-between items-center px-20  text-slate-200 max-md:px-5 max-md:py-4">
+    <header className="flex relative justify-between items-center px-20  text-slate-200 max-md:px-5 max-md:py-4 z-20">
       <Link href="/">
         <h1 className="my-auto text-5xl font-medium border-slate-200 border-opacity-50 tracking-[2.6px] max-md:text-4xl">
           Anton Do

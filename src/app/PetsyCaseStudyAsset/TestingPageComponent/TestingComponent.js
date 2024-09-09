@@ -20,54 +20,54 @@ function TestingComponent() {
       },
     },
     {
-      title: <Box className="text-3xl">Filtering System</Box>,
+      title: <Box className="text-3xl">AI Chatbot</Box>,
       content: {
         description: (
           <Box className="text-xl">
-            "Made changes to the filtering system. The old one was too big and
-            made people lose focus on what they were on the page for."
+            Decided to have an AI chatbot that can help users answer their
+            questions on which product would best suit their needs.
           </Box>
         ),
         details: (
           <Box className="h-auto w-full bg-slate-500 p-6 rounded-xl">
-            <img src="/assets/FilterChange.png" />
+            <img src="/assets/Ai bot.png" />
           </Box>
         ),
       },
     },
-    {
-      title: <Box className="text-3xl">Contact Form</Box>,
-      content: {
-        description: (
-          <Box className="text-xl">
-            Changed the placement of the contact form from the bottom of the
-            home page to a whole seperate page because people don't tend to
-            scroll all the way down on the homepage.
-          </Box>
-        ),
-        details: (
-          <Box className="h-auto w-full bg-slate-500 p-6 rounded-xl">
-            <img src="/assets/contact.png" />
-          </Box>
-        ),
-      },
-    },
-    {
-      title: <Box className="text-3xl">Background Colors</Box>,
-      content: {
-        description: (
-          <Box className="text-xl">
-            Made changes to the colors to give it a more clean and mordern look
-            and for users to focus on the content rather than the colors.
-          </Box>
-        ),
-        details: (
-          <Box className="h-auto w-full bg-slate-700 p-6 rounded-xl">
-            <img src="/assets/ColorChange.png" />
-          </Box>
-        ),
-      },
-    },
+    // {
+    //   title: <Box className="text-3xl">Contact Form</Box>,
+    //   content: {
+    //     description: (
+    //       <Box className="text-xl">
+    //         Changed the placement of the contact form from the bottom of the
+    //         home page to a whole seperate page because people don't tend to
+    //         scroll all the way down on the homepage.
+    //       </Box>
+    //     ),
+    //     details: (
+    //       <Box className="h-auto w-full bg-slate-500 p-6 rounded-xl">
+    //         <img src="/assets/contact.png" />
+    //       </Box>
+    //     ),
+    //   },
+    // },
+    // {
+    //   title: <Box className="text-3xl">Background Colors</Box>,
+    //   content: {
+    //     description: (
+    //       <Box className="text-xl">
+    //         Made changes to the colors to give it a more clean and mordern look
+    //         and for users to focus on the content rather than the colors.
+    //       </Box>
+    //     ),
+    //     details: (
+    //       <Box className="h-auto w-full bg-slate-700 p-6 rounded-xl">
+    //         <img src="/assets/ColorChange.png" />
+    //       </Box>
+    //     ),
+    //   },
+    // },
   ];
 
   return (

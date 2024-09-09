@@ -9,31 +9,32 @@ function DesignPage() {
     {
       title: "Design",
       content:
-        "With a better understanding of the users’ needs and goals, I began coming up with  concepts for the web app’s function and flow.",
+        "With a clearer insight into the challenges pet owners face when shopping online, I started brainstorming concepts to enhance the functionality and flow of the Petsy eCommerce site",
     },
     {
       title: "Concept",
       content: (
         <Box>
           <b className="text-2xl">
-            The website offers a personalized and seamless dog adoption
-            experience, enhanced by smart technology.
+            The Petsy platform is designed to provide a personalized and
+            effortless shopping experience for pet owners, powered by intuitive
+            technology
           </b>
           <br />
           <br />
-          The platform can engage potential adopters with tailored
-          recommendations based on their preferences, lifestyle, and home
-          environment.
+          The site offers tailored product recommendations based on each pet’s
+          needs, preferences, and health considerations, making it easier for
+          owners to find the right items.
           <br />
           <br />
-          It also learns from user interactions, adapting its suggestions to
-          match their needs, making the process of finding the perfect dog
-          easier and more intuitive.
+          By learning from user interactions and refining its suggestions, the
+          platform ensures that every product fits seamlessly into the pet's
+          life, simplifying the decision-making process.
           <br />
           <br />
-          This concept became the foundation of my idea, leveraging technology
-          to create a personalized adoption journey that aligns with the unique
-          needs of each adopter, ensuring a successful match.
+          This concept became the foundation of my idea, using smart technology
+          to create a shopping journey that caters to the specific needs of pets
+          and their owners, ensuring they find the best products effortlessly.
         </Box>
       ),
     },
@@ -41,16 +42,20 @@ function DesignPage() {
       title: "Key Features",
       content: (
         <Box>
-          Personalized Matching: Users can receive tailored dog recommendations
-          by providing details about their lifestyle, home environment, and
-          preferences.
+          <strong>Intuitive Product Finder:</strong> Petsy features an intuitive
+          product finder that helps pet owners easily locate the best products
+          for their pets. By categorizing items based on pet type, specific
+          needs, and user preferences, this feature ensures that customers can
+          quickly find exactly what they're looking for without sifting through
+          countless irrelevant options.
           <br />
           <br />
-          Interactive Support: Users can engage with the platform to ask
-          questions and get advice on dog care, training, and adoption
-          readiness. These features are designed to ensure that each user finds
-          a dog that perfectly fits their needs, making the adoption process
-          smoother and more successful.
+          <strong>Personalized Shopping Experience:</strong> Petsy offers a
+          personalized shopping experience by tailoring product recommendations
+          based on each user's browsing history and preferences. This feature
+          allows pet owners to discover products that align with their pets'
+          unique needs, ensuring a more customized and satisfying shopping
+          journey.
         </Box>
       ),
     },
@@ -77,19 +82,19 @@ function DesignPage() {
         title="Website Flow"
         imageContent={
           <a
-            href="/assets/Webside Flow for Olana Adoptions2.png"
+            href="\assets\petsyFlowchart.png"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="/assets/Webside Flow for Olana Adoptions2.png"
+              src="\assets\petsyFlowchart.png"
               className="rounded-2xl"
               alt="Website Flow"
             />
           </a>
         }
       />
-      <ImageSection
+      {/* <ImageSection
         title="Lofi Wireframes"
         imageContent={
           <a
@@ -104,9 +109,9 @@ function DesignPage() {
             />
           </a>
         }
-      />
+      /> */}
 
-      <ImageSection
+      {/* <ImageSection
         title="Design System"
         imageContent={
           <a
@@ -121,8 +126,8 @@ function DesignPage() {
             />
           </a>
         }
-      />
-      <ImageSection
+      /> */}
+      {/* <ImageSection
         title="Components"
         imageContent={
           <a
@@ -137,7 +142,7 @@ function DesignPage() {
             />
           </a>
         }
-      />
+      /> */}
     </Box>
   );
 }
