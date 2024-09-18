@@ -94,22 +94,22 @@ function DesignPage() {
           </a>
         }
       />
-      {/* <ImageSection
+      <ImageSection
         title="Lofi Wireframes"
         imageContent={
           <a
-            href="/assets/WireFrame for Petsite.png"
+            href="/assets/petsywireframe.png"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              className="rounded-2xl"
-              src="/assets/WireFrame for Petsite.png"
+              className="p-2 rounded-2xl"
+              src="/assets/petsywireframe.png"
               alt="Lofi Wireframes"
             />
           </a>
         }
-      /> */}
+      />
 
       {/* <ImageSection
         title="Design System"
