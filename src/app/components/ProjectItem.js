@@ -75,7 +75,7 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
             <Grid
               item
               xs={12}
-              className="flex justify-center bg-slate-700 rounded-xl md:justify-start"
+              className="flex justify-center bg-gradient-to-r from-black rounded-xl md:justify-start"
             >
               <img
                 loading="lazy"
