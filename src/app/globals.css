@@ -16,6 +16,16 @@
   }
 }
 
+body.dark-mode {
+  background-color: #1a202c;
+  color: #cbd5e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1a202c;
+  color: #cbd5e0;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

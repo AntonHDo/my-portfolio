@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Box } from "@mui/material";
 import ContainerBoxes from "../components/ContainerBoxes";
+import DarkModeToggle from "../components/DarkModeToggle";
 
 const ProjectPage = () => {
   return (
