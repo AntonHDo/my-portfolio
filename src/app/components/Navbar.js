@@ -1,11 +1,14 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import MenuIcon from "@mui/icons-material/Menu"; // Importing the Menu icon
-import CloseIcon from "@mui/icons-material/Close"; // Importing the Close icon
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import DarkModeToggle from "./DarkModeToggle";
+import { useDarkMode } from "../hooks/DarkModeContext"; // Import the useDarkMode hook
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDarkMode } = useDarkMode(); // Use the useDarkMode hook
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,7 +18,6 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  // Close menu when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (event.target.closest(".menu-container") === null) {
@@ -35,29 +37,31 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="flex relative justify-between items-center text-nowrap px-10  text-slate-200 max-md:px-5 max-md:py-4 z-20">
-      <Link href="/">
-        <h1 className="my-auto text-3xl font-semibold border-slate-200 border-opacity-50 ">
-          Anton Do
-        </h1>
-      </Link>
+    <header className={`navbar ${isDarkMode ? "bg-slate-800 text-slate-200" : "bg-slate-200 text-slate-800"} flex relative justify-between items-center text-nowrap px-10 max-md:px-5 max-md:py-4 z-20`}>
+      <div className="flex flex-row items-center justify-between w-full" >
+        <Link href="/">
+          <h1 className="my-auto text-3xl font-semibold border-slate-200 border-opacity-50">
+            Anton Do
+          </h1>
+        </Link>
+        <div className="flex justify-end pr-2">
 
-      {/* Hamburger menu for mobile (only visible on small screens) */}
-      <div className="flex items-center md:hidden z-20 ">
+          <DarkModeToggle />
+        </div>
+      </div>
+      <div className="flex items-center md:hidden z-20">
         <div onClick={toggleMenu} className="cursor-pointer">
           {isMenuOpen ? (
-            <CloseIcon style={{ fontSize: 48 }} /> // Displaying Close icon
+            <CloseIcon style={{ fontSize: 48 }} />
           ) : (
-            <MenuIcon style={{ fontSize: 48 }} /> // Displaying Menu icon
+            <MenuIcon style={{ fontSize: 48 }} />
           )}
         </div>
       </div>
-
-      {/* Standard navigation links (hidden on mobile) */}
-      <nav className="hidden md:flex gap-10 py-6 text-xl whitespace-nowrap">
+      <nav className="hidden md:flex gap-10 py-6 text-xl whitespace-nowrap w-fit">
         <Link href="/projects">Projects</Link>
         <a
-          href="/assets/My Resume .pdf" // Replace with the actual path to your resume
+          href="/assets/My Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="self-start"
@@ -69,21 +73,19 @@ const Navbar = () => {
           Contact
         </Link>
       </nav>
-
-      {/* Dropdown menu (shown when hamburger is clicked) */}
       {isMenuOpen && (
-        <nav className="absolute top-20 right-0 flex flex-col text-xl items-end bg-zinc-800 bg-opacity-85 p-5 rounded-lg shadow-lg w-full md:hidden z-10 menu-container">
+        <nav className={` ${isDarkMode ? "bg-slate-800 text-slate-200" : "bg-slate-200 text-slate-800"} absolute top-20 right-0 flex flex-col text-xl items-end bg-opacity-85 p-5 shadow-lg w-full md:hidden z-10 menu-container`}>
           <a href="/projects" className="block py-2">
             Projects
           </a>
           <a
-          href="/assets/My Resume .pdf" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block py-2"
-        >
-          Resume
-        </a>
+            href="/assets/My Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block py-2"
+          >
+            Resume
+          </a>
           <a href="/contact" className="block py-2">
             Contact
           </a>

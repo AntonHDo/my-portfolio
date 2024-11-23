@@ -1,14 +1,14 @@
+'use client';
 import React from "react";
+import { useDarkMode } from "../hooks/DarkModeContext";
 
 const SectionTitle = ({ title }) => {
+  const isDarkMode = useDarkMode();
   return (
-    <div className="flex flex-col max-w-full w-full">
-      <h2 className="self-center text-5xl text-center border-slate-200 border-opacity-50 text-slate-200 max-md:text-4xl ">
+    <div className="flex flex-col w-full">
+      <h2 className={`${isDarkMode ? " text-slate-200" : " text-slate-800"} self-center text-5xl text-center max-md:text-4xl`}>
         {title}
       </h2>
-      {/* <div className="flex justify-center items-center py-3 max-md:px-5 max-md:max-w-full">
-        <div className="shrink-0 h-1.5 bg-slate-200 w-[478px] max-md:w-[203px] " />
-      </div> */}
     </div>
   );
 };
