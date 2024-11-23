@@ -16,7 +16,7 @@ const About = () => {
         <Box className="mt-20 mb-12 w-full max-w-[1292px] max-md:mb-10 max-md:my-0 max-md:max-w-full">
           <Box className="flex gap-5 max-md:flex-col items-center">
             <Box className="flex flex-col w-[62%] max-md:ml-0 max-md:w-full">
-              <ul className={`${isDarkMode ? "bg-slate-800 text-slate-200" : "bg-slate-200 text-slate-800"} self-stretch pr-14 pl-12 my-auto text-3xl text-pretty leading-10 list-disc max-md:pr-8 max-md:pl-5 max-md:mt-10 max-md:max-w-full`}>
+              <ul className={` self-stretch pr-14 pl-12 my-auto text-3xl text-pretty leading-10 list-disc max-md:pr-8 max-md:pl-5 max-md:mt-10 max-md:max-w-full`}>
                 <li>
                   Graduated from San Jose State University with a BA in
                   Linguistics
