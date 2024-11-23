@@ -37,9 +37,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className={`${isDarkMode ? "bg-slate-800" : "bg-slate-200"} h-full flex relative flex-col justify-center items-center pt-20 w-full max-md:px-5 max-md:max-w-full`}
+      className={` h-full flex relative flex-col justify-center items-center pt-20 w-full max-md:px-5 max-md:max-w-full`}
     >
-      <div className={`${isDarkMode ? "bg-slate-800 text-slate-200" : "bg-slate-200 text-slate-800"} w-full h-full flex justify-center items-center text-5xl font-bold px-10s max-md:px-5 max-md:max-w-full`}>
+      <div className={`${isDarkMode ? " text-slate-200" : " text-slate-800"} w-full h-full flex justify-center items-center text-5xl font-bold px-10s max-md:px-5 max-md:max-w-full`}>
         Projects
       </div>
       <div className="flex flex-col md:flex-row justify-center h-full items-start px-16 pt-20 max-md:pt-20 max-md:max-w-full">

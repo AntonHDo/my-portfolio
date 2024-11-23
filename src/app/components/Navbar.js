@@ -37,7 +37,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className={`navbar ${isDarkMode ? "bg-slate-800 text-slate-200" : "bg-slate-200 text-slate-800"} flex relative justify-between items-center text-nowrap px-10 max-md:px-5 max-md:py-4 z-20`}>
+    <header className={`navbar ${isDarkMode ? " text-slate-200" : " text-slate-800"} flex relative justify-between items-center text-nowrap px-10 max-md:px-5 max-md:py-4 z-20`}>
       <div className="flex flex-row items-center justify-between w-full" >
         <Link href="/">
           <h1 className="my-auto text-3xl font-semibold border-slate-200 border-opacity-50">

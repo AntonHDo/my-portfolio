@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <div
-      className={`${isDarkMode ? "bg-slate-800 text-slate-200" : " bg-slate-200 text-slate-800"} flex flex-col items-center px-16 w-full max-md:px-5 max-md:max-w-full`}
+      className={`${isDarkMode ? " text-slate-200" : " text-slate-800"} flex flex-col items-center px-16 w-full max-md:px-5 max-md:max-w-full`}
     >
       <div className="mt-20 text-4xl font-bold text-center border-slate-200 border-opacity-50 max-md:mt-20 max-md:max-w-full">
         Stay Connected With Me!
