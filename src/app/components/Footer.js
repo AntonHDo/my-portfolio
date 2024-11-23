@@ -1,29 +1,33 @@
+'use client';
 import React from "react";
 import { Box } from "@mui/material";
-import CustomDivider from "../CaseStudyAsset/CustomerDivider";
+import { useDarkMode } from "../hooks/DarkModeContext"; // Ensure this path is correct
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
+  const { isDarkMode } = useDarkMode(); // Destructure the isDarkMode state
+
   return (
-    <Box
-      component="footer"
-      className="relative flex flex-col items-center px-16 w-full max-md:px-5 max-md:max-w-full"
+    <div
+      className={`${isDarkMode ? "bg-slate-800 text-slate-200" : " bg-slate-200 text-slate-800"} flex flex-col items-center px-16 w-full max-md:px-5 max-md:max-w-full`}
     >
-      <CustomDivider />
-      <h2 className="mt-20 text-4xl text-center text-slate-200  border-slate-200 border-opacity-50 tracking-[2px] max-md:mt-20 max-md:max-w-full">
+      <div className="mt-20 text-4xl font-bold text-center border-slate-200 border-opacity-50 max-md:mt-20 max-md:max-w-full">
         Stay Connected With Me!
-      </h2>
-      <Box className="flex gap-8 justify-center items-start py-20">
+      </div>
+      <Box className={`flex gap-8 justify-center items-center py-20`}>
         <a
           href="https://www.linkedin.com/in/anton-do/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
+        // className={`${isDarkMode ? " !bg-slate-800" : " !bg-slate-800"}`}
         >
-          <img
+          <LinkedInIcon
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/722db9d5068146866e79d930f697a5a6576ba7df4b890faa695a798ff208ec32?apiKey=04b03a6f932f43d5ac0f299cdc8c8e61&&apiKey=04b03a6f932f43d5ac0f299cdc8c8e61"
             alt="LinkedIn"
-            className="shrink-0 aspect-square w-[70px]"
+            className={` aspect-square w-[70px] text-7xl`}
+            fontSize="large"
           />
         </a>
         <a
@@ -32,27 +36,22 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <img
+          <GitHubIcon
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b41bea0c94d04b20871630ef5737036afe847c18e8eaa3672e861ebb7146b0f?apiKey=04b03a6f932f43d5ac0f299cdc8c8e61&&apiKey=04b03a6f932f43d5ac0f299cdc8c8e61"
             alt="GitHub"
-            className="shrink-0 aspect-[1.03] w-[70px] border-slate-200 text-slate-200"
+            className="shrink-0 aspect-[1.03] w-[70px] text-6xl"
+            fontSize='large'
           />
         </a>
       </Box>
       <Box
         className="absolute bottom-0 right-0 "
-        sx={{
-          textAlign: "right",
-          color: "white",
-          width: "100%",
-        }}
       >
-        <p className="max-md:max-w-full font-thin text-sm">
+        <p className={`max-md:max-w-full font-normal text-sm pr-2`}>
           Created by Anton Do with NextJS
         </p>
       </Box>
-    </Box>
+    </div>
   );
 };
 

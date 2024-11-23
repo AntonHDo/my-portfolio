@@ -1,11 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import SectionTitle from "./Section Title";
 import ProjectItem from "./ProjectItem";
-
+import { useDarkMode } from "../hooks/DarkModeContext";
 const Projects = () => {
-  const [cardHeight, setCardHeight] = useState("auto");
-
+  const { isDarkMode } = useDarkMode();
   const projectList = [
     {
       id: 1,
@@ -39,12 +37,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex relative flex-col justify-center items-center px-14 pt-20 w-full max-md:px-5 max-md:max-w-full"
+      className={`${isDarkMode ? "bg-slate-800" : "bg-slate-200"} h-full flex relative flex-col justify-center items-center pt-20 w-full max-md:px-5 max-md:max-w-full`}
     >
-      <div className="flex justify-center items-center px-16 max-md:px-5 max-md:max-w-full">
-        <SectionTitle title="Projects" />
+      <div className={`${isDarkMode ? "bg-slate-800 text-slate-200" : "bg-slate-200 text-slate-800"} w-full h-full flex justify-center items-center text-5xl font-bold px-10s max-md:px-5 max-md:max-w-full`}>
+        Projects
       </div>
-      <div className="flex flex-col justify-center w-[70%] items-start px-16 pt-20 max-md:px-5 max-md:pt-20 max-md:max-w-full">
+      <div className="flex flex-col md:flex-row justify-center h-full items-start px-16 pt-20 max-md:pt-20 max-md:max-w-full">
         {projectList.map((project, index) => (
           // <Link href="/projects/olanaadoptions">
           <ProjectItem
@@ -52,13 +50,13 @@ const Projects = () => {
             imageSrc={project.imageSrc}
             title={project.title}
             href={project.href}
-            height={cardHeight} // Apply consistent height
-            className="project-card" // Add class for height calculation
+            className="project-card h-full" // Add class for height calculation
           />
           // </Link>
         ))}
       </div>
     </section>
+
   );
 };
 

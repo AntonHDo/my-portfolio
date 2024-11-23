@@ -1,3 +1,4 @@
+'use client';
 import Head from "next/head";
 import React from "react";
 import Layout from "./components/Layout";
@@ -12,7 +13,6 @@ const App = () => {
       </div>
       <div>
         <Layout />
-        
       </div>
     </div>
   );

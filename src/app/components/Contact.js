@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import SectionTitle from "./Section Title";
+import { useDarkMode } from "../hooks/DarkModeContext";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-
+  const { isDarkMode } = useDarkMode();
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
@@ -51,12 +51,11 @@ const Contact = () => {
 
   return (
     <section
-      id="contact"
-      className="flex relative flex-col items-center mt-20 w-full max-md:mt-20 max-md:max-w-full"
+
+      className={`${isDarkMode ? "!bg-slate-800 text-slate-200" : " text-slate-800 !bg-slate-200"} flex flex-col items-center pt-20 w-full `}
     >
-      <div className="flex justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
-        <SectionTitle title="Contact Me!" />
-      </div>
+      <div className="flex justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full text-5xl font-bold">
+        Contact Me!      </div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col self-center px-7 py-20 mt-0 max-w-full text-lg whitespace-nowrap text-slate-400 w-[789px] max-md:px-5"
@@ -69,7 +68,7 @@ const Contact = () => {
           type="text"
           value={formData.name}
           onChange={handleChange}
-          className="px-4 py-2.5 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:max-w-full"
+          className={`${isDarkMode ? "!bg-slate-200 border-slate-300" : "  !bg-slate-50 border-slate-800"} px-4 py-2.5 rounded-md border border-solid   max-md:max-w-full`}
           placeholder="Name"
           required
         />
@@ -82,7 +81,7 @@ const Contact = () => {
           type="email"
           value={formData.email}
           onChange={handleChange}
-          className="px-4 py-2.5 mt-16 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:pr-5 max-md:mt-10 max-md:max-w-full"
+          className={`${isDarkMode ? "!bg-slate-200 border-slate-300" : "  !bg-slate-50 border-slate-800"} mt-10 px-4 py-2.5 rounded-md border border-solid   max-md:max-w-full`}
           placeholder="Email"
           required
         />
@@ -95,7 +94,7 @@ const Contact = () => {
           type="text"
           value={formData.subject}
           onChange={handleChange}
-          className="px-4 py-2.5 mt-16 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:pr-5 max-md:mt-10 max-md:max-w-full"
+          className={`${isDarkMode ? "!bg-slate-200 border-slate-300" : "  !bg-slate-50 border-slate-800"} mt-10 px-4 py-2.5 rounded-md border border-solid   max-md:max-w-full`}
           placeholder="Subject"
           required
         />
@@ -107,14 +106,14 @@ const Contact = () => {
           id="message"
           value={formData.message}
           onChange={handleChange}
-          className="px-4 pt-2.5 pb-6 mt-16 rounded-md border border-solid bg-stone-200 border-stone-300 max-md:mt-10 max-md:max-w-full"
+          className={`${isDarkMode ? "!bg-slate-200 border-slate-300" : "  !bg-slate-50 border-slate-800"} mt-10 px-4 py-2.5 rounded-md border border-solid   max-md:max-w-full`}
           placeholder="Message"
           required
         ></textarea>
 
         <button
           type="submit"
-          className="self-center px-4 py-2.5 mt-16 text-2xl text-center text-stone-200 rounded-md border border-solid bg-slate-400 border-neutral-300 max-md:mt-10"
+          className={`${isDarkMode ? "!bg-slate-200 border-slate-300 text-slate-800" : " !bg-slate-800 border-slate-400 text-slate-200"} self-center px-4 py-2.5 mt-16 text-2xl text-center  rounded-md border border-solid max-md:mt-10`}
         >
           Submit
         </button>

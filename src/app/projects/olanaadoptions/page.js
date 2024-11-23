@@ -1,6 +1,6 @@
-// /app/projects/olanaadoptions/page.js
+'use client';
 import React from "react";
-import CaseStudyPage from "@/app/CaseStudyAsset/CaseStudyPage"; // Adjust path as needed
+import CaseStudyPage from "@/app/Content/CaseStudyAsset/CaseStudyPage"; // Adjust path as needed
 
 const OlanaAdoptionsPage = () => {
   return <CaseStudyPage />;

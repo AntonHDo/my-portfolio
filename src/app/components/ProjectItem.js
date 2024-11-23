@@ -2,9 +2,11 @@
 import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { Grid, Box } from "@mui/material";
+import { useDarkMode } from "../hooks/DarkModeContext";
 
 const ProjectItem = ({ imageSrc, title, href, height }) => {
   const boxRef = useRef(null);
+  const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
     if (boxRef.current) {
@@ -18,9 +20,8 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
     const x = e.clientX - rect.left - rect.width / 2;
     const y = e.clientY - rect.top - rect.height / 2;
 
-    boxRef.current.style.transform = `perspective(1200px) rotateX(${
-      -y / 80
-    }deg) rotateY(${x / 80}deg) scale(1.07)`;
+    boxRef.current.style.transform = `perspective(1200px) rotateX(${-y / 80
+      }deg) rotateY(${x / 80}deg) scale(1.07)`;
   };
 
   const handleMouseLeave = () => {
@@ -30,30 +31,19 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
 
   return (
     <Grid
-      item
-      xs={12}
-      sm={6}
-      md={6}
-      lg={4}
-      xl={3}
-      className="w-full pb-20 max-md:mb-0 max-md:pb-20"
+      className="w-full h-full pb-20 max-md:pb-20 px-4 max-md:px-0"
     >
       <Link href={href}>
         <Box
           ref={boxRef}
           sx={{
             borderRadius: "16px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
             overflow: "hidden",
-            padding: {
-              xs: "12px",
-              md: "24px",
-            },
             display: "flex",
             flexDirection: "column",
             transition: "transform 0.3s ease-out", // Smooth transition for hover effect
           }}
-          className="bg-slate-200 opacity-85"
+          className="w-full h-full md:px-4"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
         >
@@ -68,20 +58,20 @@ const ProjectItem = ({ imageSrc, title, href, height }) => {
               xs={12}
               className="flex justify-center items-center text-center pb-6 max-md:pb-3"
             >
-              <p className="text-center text-4xl md:text-6xl text-slate-500 max-md:text-3xl">
+              <p className={`${isDarkMode ? "text-slate-200" : "text-slate-800"} text-center text-3xl font-bold`}>
                 {title}
               </p>
             </Grid>
             <Grid
               item
               xs={12}
-              className="flex justify-center bg-gradient-to-r from-black rounded-xl md:justify-start"
+              className="flex justify-center rounded-xl md:justify-center item-center"
             >
               <img
                 loading="lazy"
                 src={imageSrc}
                 alt={title}
-                className="max-w-full rounded-lg object-cover opacity-80"
+                className="w-full h-full rounded-lg object-cover aspect-[8/4] opacity-80"
               />
             </Grid>
           </Grid>

@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { DarkModeProvider } from "../app/hooks/DarkModeContext"; // Import the DarkModeProvider
+import { DarkModeProvider } from "../app/hooks/DarkModeContext"; // Ensure this path is correct
 
 const inter = Inter({ subsets: ["latin"] });
 
