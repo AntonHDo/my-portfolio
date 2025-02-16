@@ -8,17 +8,12 @@ const DarkModeToggle = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode(); // Use the useDarkMode hook
 
   return (
-    <Button onClick={toggleDarkMode} className={`flex p-2 w-full text-sm items-center justify-center ${isDarkMode ? "text-white" : "text-black"}`}>
+    <Button onClick={toggleDarkMode} className={` normal-case gap-2 mr-2 flex p-2 w-full text-sm items-center justify-center ${isDarkMode ? "text-white" : "text-black"}`}>
       {isDarkMode ? (
-        <div className="flex normal-case gap-2 mr-2">
-          <LightModeTwoToneIcon />
-        
-        </div>
+        <LightModeTwoToneIcon />
+
       ) : (
-        <div className="flex normal-case gap-2 mr-2">
-          <DarkModeTwoToneIcon />
-         
-        </div>
+        <DarkModeTwoToneIcon />
       )}
     </Button>
   );
